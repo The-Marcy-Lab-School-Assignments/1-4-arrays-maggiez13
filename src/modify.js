@@ -1,11 +1,18 @@
 const uppercaseAll = (... words) => {
+  // console.log(words);
   let newArray = [];
   for (let i = 0; i < words.length; i++) {
-    const upCase = words.toUpperCase; 
-    console.log(newArray.push(upCase));
+    const upCase = words[i].toUpperCase(); 
+    // .toUpperCase() are for strings 
+    // words is an array 
+      // [i] would allow for strings in the array 
+    newArray.push(upCase);
+    // newArray.push(words[i].toUpperCase());
   }
   return newArray;
 };
+
+console.log(uppercaseAll("hi", "hello"))
 
 // const uppercaseAll = (word1, word2, word3) => {
 //   return [
