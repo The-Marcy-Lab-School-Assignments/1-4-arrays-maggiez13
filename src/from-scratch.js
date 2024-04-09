@@ -55,12 +55,19 @@ const roundAllNumsDown = (arr) => {
   return newArray;
 };
 
-console.log(roundAllNumsDown([1.1, 2.2, 3.3])); 
-console.log(roundAllNumsDown([5.9, -7.9, 12.9])); 
+// console.log(roundAllNumsDown([1.1, 2.2, 3.3])); 
+// console.log(roundAllNumsDown([5.9, -7.9, 12.9])); 
 
 
-const getAllYCoordinates = () => {
+const getAllYCoordinates = (arrOfCoords) => {
+  let newArray = [];
+  for (let i = 0; i < arrOfCoords.length; i++) {
+    newArray.push(arrOfCoords[0][1]);
+  }
+  return newArray;
 };
+
+console.log(getAllYCoordinates([[1, 2], [3, 4], [5, 6]]));
 
 module.exports = {
   addToFrontOrBack,
