@@ -62,7 +62,7 @@ const roundAllNumsDown = (arr) => {
 const getAllYCoordinates = (arrOfCoords) => {
   let newArray = [];
   for (let i = 0; i < arrOfCoords.length; i++) {
-    newArray.push(arrOfCoords[0][1]);
+    newArray.push(arrOfCoords[i][1]);
   }
   return newArray;
 };
