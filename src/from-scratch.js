@@ -27,11 +27,13 @@ const newArrayFullOf = (value, numOfValue) => {
 // console.log(newArrayFullOf(5, 3));
 
 const insertIntoMiddle = (arr, value) => {
-  let middle = Math.floor(arr.length / 2);
-  console.log(arr.splice(middle, 0, value));
+  let midPoint = Math.floor(arr.length / 2);
+  console.log(arr.splice(midPoint, 0, value));
 };
 
-const deleteFromMiddle = () => {
+const deleteFromMiddle = (arr, value) => {
+  let midPoint = Math.floor(arr.length / 2);
+  console.log(arr.splice(midPoint, 1));
 };
 
 const isRightIndex = () => {
