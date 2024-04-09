@@ -47,8 +47,17 @@ const isRightIndex = (arr, value, index) => {
 // console.log(isRightIndex(arr, 'a', 0));
 
 
-const roundAllNumsDown = () => {
+const roundAllNumsDown = (arr) => {
+  let newArray = []
+  for (let i = 0; i < arr.length; i++) {
+    newArray.push(Math.floor(arr[i]));
+  }
+  return newArray;
 };
+
+console.log(roundAllNumsDown([1.1, 2.2, 3.3])); 
+console.log(roundAllNumsDown([5.9, -7.9, 12.9])); 
+
 
 const getAllYCoordinates = () => {
 };
