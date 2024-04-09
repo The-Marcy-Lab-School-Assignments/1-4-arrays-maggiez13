@@ -15,15 +15,20 @@ const reverseString = (string) => {
 const newArrayFullOf = (value, numOfValue) => {
   let arr = [];
   for (let i = 0; i < numOfValue; i++) {
-    console.log(arr.push(value));
+    arr.push(value);
   }
   return arr;
-  // console.log(array.fill(value));
 };
 
-console.log(newArrayFullOf(5, 3));
+// const newArrayFullOf2 = (value, numOfValue) => {
+//   return new Array(numOfValue).fill(value);
+// };
 
-const insertIntoMiddle = () => {
+// console.log(newArrayFullOf(5, 3));
+
+const insertIntoMiddle = (arr, value) => {
+  let middle = Math.floor(arr.length / 2);
+  console.log(arr.splice(middle, 0, value));
 };
 
 const deleteFromMiddle = () => {
