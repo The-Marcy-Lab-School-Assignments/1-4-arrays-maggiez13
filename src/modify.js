@@ -24,6 +24,7 @@ console.log(uppercaseAll("hi", "hello"))
 
 const destructureCoordinates = (coordinates) => {
   // just removed const declaration ?
+  // const [x, y] = [coordinates]
   const [x, y] = [coordinates[0], coordinates[1]];
   // x = coordinates[0];
   // y = coordinates[1];

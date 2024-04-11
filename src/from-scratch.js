@@ -48,7 +48,7 @@ const isRightIndex = (arr, value, index) => {
 
 
 const roundAllNumsDown = (arr) => {
-  let newArray = []
+  let newArray = [];
   for (let i = 0; i < arr.length; i++) {
     newArray.push(Math.floor(arr[i]));
   }
