@@ -1,3 +1,8 @@
+/** FEEDBACK: Love that you did it this way, here are the alternate solutions: 
+ * arr.length = 0 
+ * 
+ * arr[0]
+ */
 /* eslint-disable no-param-reassign */
 const clearArr = (arr) => {
   while (arr.length > 0) {

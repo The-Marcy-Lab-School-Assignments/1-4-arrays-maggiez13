@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job! JUst make sure to remove any commented out code and console.logs before submitting! */
 const uppercaseAll = (... words) => {
   // console.log(words);
   let newArray = [];
@@ -25,6 +26,7 @@ console.log(uppercaseAll("hi", "hello"))
 const destructureCoordinates = (coordinates) => {
   // just removed const declaration ?
   // const [x, y] = [coordinates]
+  /** FEEDBACK: Here you could just set it equal to coordinates. */
   const [x, y] = [coordinates[0], coordinates[1]];
   // x = coordinates[0];
   // y = coordinates[1];
